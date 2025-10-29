@@ -3,6 +3,9 @@
   "homepage": "https://maneboy1238.github.io/maneboy-3d-website/",
   "private": true,
   "version": "0.0.0",
+  "engines": {
+  "node": "18.x"
+},
   "type": "module",
   "scripts": {
     "dev": "vite",
