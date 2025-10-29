@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practice-3d</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: monospace;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .content {
+        position: relative;
+        color: white;
+        z-index: 10;
+        text-align: center;
+      }
+      .name {
+        font-size: 1.5rem;
+        color: hsl(0, 0%, 90%);
+      }
+      .main-heading {
+        font-size: 2.5rem;
+        margin-top: 0.2rem;
+        color: hsl(0 , 0%, 95%);
+        font-weight: 700;
+      }
+      .btn {
+        margin-top: 2rem;
+        padding: 0.5rem 2rem;
+        background: transparent;
+        border: 2px solid hsl(0, 0%, 95%);
+        color: hsl(0,0%,95%);
+        border-radius: 4px;
+      }
+      
+      .btn.hover {
+        background: hsl(0, 0%, 95%);
+        color: hsl(0,0%,5%);
+      
+    }
+    @media (max-width: 450px) {
+      .name {
+        font-size: 1rem;
+      }
+      .main-heading {
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+        width: 90%;
+      }
+      .btn {
+        padding: 0.75rem 2.5rem;
+        text-align: left;
+        font-size: 10px;
+        white-space: nowrap;
+      }
+    }
+    @media (hover:hover) and (pointer: fine) {
+      .btn:hover {
+        background: hsl(0, 0%, 95%);
+        color: hsl(0,0%,5%);
+      
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <p class="name">
+        Okonudu Manasseh
+      </p>
+      <h1 class="main-heading">
+        See the World in 3D 
+      </h1>
+      <button class="btn">See More</button>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
